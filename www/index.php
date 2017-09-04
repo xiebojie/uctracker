@@ -1,5 +1,12 @@
 <?php
-
+/*
+ * uctracker project
+ *
+ * Copyright 2017 xiebojie@qq.com
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
 define('BASEPATH', dirname(dirname(__FILE__)).'/');
 define('TPLPATH', BASEPATH.'tpl/');
 date_default_timezone_set('PRC');
