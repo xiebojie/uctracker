@@ -1,7 +1,11 @@
 <?php
-/**
- * 监控日志输出目录将最近更新的文件的内容读出根据上次传输的行号，将内容传输到服务器
- * @date 2017-06-14
+/*
+ * uctracker project
+ *
+ * Copyright 2017 xiebojie@qq.com
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
  */
 include __DIR__.'/uboot.inc.php';
 use_session();
