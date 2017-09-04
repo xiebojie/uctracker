@@ -28,7 +28,6 @@ class mission_ctrl extends ctrl
         $filter_where = form_filter_parse($filter_rules, $_GET);
         list($page, $psize) = $this->fetch_paging_param();
         list($mission_list, $total) = $this->model->search_list($filter_where, ($page-1)*$psize, $psize);
-        $project_model = new project_model();
         $this->assign('mission_list', $mission_list,'count',$total);
         $this->display('mission.list.php');
     }
