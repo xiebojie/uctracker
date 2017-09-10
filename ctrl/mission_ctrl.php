@@ -19,7 +19,6 @@ class mission_ctrl extends ctrl
     {
         $filter_rules = array(
             'id'=>'column:id|compare:equal',
-            'project_id'=>'column:project_id|compare:equal',
             'name'=>'column:name|compare:like',
             'operator'=>'column:operator|compare:like',
             'node_list'=>'column:node_list|compare:like',
