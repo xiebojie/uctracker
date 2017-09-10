@@ -15,40 +15,40 @@
     </div>
     <form class="form-horizontal mt30 js-ajaxform" method="post">
         <div class="form-group">
-            <label  class="col-sm-1 control-label">任务名称</label>
+            <label  class="col-sm-2 control-label">任务名称</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="name" data-rule="required" value="{%$mission['name']|default:''%}"/>
             </div>
         </div>
         <div class="form-group">
-            <label  class="col-sm-1 control-label">任务脚本</label>
+            <label  class="col-sm-2 control-label">任务脚本</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="script" data-rule="required" value="{%$mission['script']|default:''%}" 
                        placeholder="请填程序绝对地址或linux 命令，可包含参数"/>
             </div>
         </div>
         <div class="form-group">
-            <label  class="col-sm-1 control-label">时间表达式</label>
+            <label  class="col-sm-2 control-label">时间表达式</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="cron_spec" data-rule="required" value="{%$mission['cron_spec']|default:''%}"
                        placeholder="crontab 时间格式" data-rule="/^((\*(\/[0-9]+)?)|[0-9\-\,\/]+)\s+((\*(\/[0-9]+)?)|[0-9\-\,\/]+)\s+((\*(\/[0-9]+)?)|[0-9\-\,\/]+)\s+((\*(\/[0-9]+)?)|[0-9\-\,\/]+)\s+((\*(\/[0-9]+)?)|[0-9\-\,\/]+)$/i"/>
             </div>
         </div>
         <div class="form-group">
-            <label  class="col-sm-1 control-label">单机进程数</label>
+            <label  class="col-sm-2 control-label">单机进程数</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="proc_num" data-rule="required" value="{%$mission['proc_num']|default:'1'%}"
                        placeholder="每个机器上的启动进程数"/>
             </div>
         </div>
         <div class="form-group">
-            <label  class="col-sm-1 control-label">部署机器</label>
+            <label  class="col-sm-2 control-label">部署机器</label>
             <div class="col-sm-10">
                 <textarea class="form-control" name="node_list" data-rule="required">{%$mission['node_list']|default:''%}</textarea>
             </div>
         </div>
         <div class="form-group">
-            <label  class="col-sm-1 control-label"></label>
+            <label  class="col-sm-2 control-label"></label>
             <div class=" col-sm-10">
                 <button type="submit" class="btn btn-success">提 交</button>
             </div>

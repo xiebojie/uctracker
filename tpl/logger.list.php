@@ -4,6 +4,7 @@
     <h1 class="pagetitle">错误日志</h1>
     <ul class="hornav">
         <li class="current"><a href="/errlog/list">日志列表</a></li>
+        <li class="current"><a href="/errlog/list">日志列表</a></li>
     </ul>
 </div>
 <div class="contentpanel">
