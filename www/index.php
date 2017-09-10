@@ -23,6 +23,14 @@ define('MYSQL_PORT','3306');
 define('MYSQL_USER','root');
 define('MYSQL_PASSWD','ppiao');
 define('MYSQL_DBNAME','uctracker');
+define('UC_APP_TOKEN','');
+
+define('UC_HOME_SIGNIN','http://uchome.com/signin');
+
+function uchome_ldap_signin()
+{
+    
+}
 
 function autoload($class)
 {
@@ -52,7 +60,6 @@ function get_mydb()
     if (!$dbh)
     {
         $dbh = new mysql(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWD, MYSQL_DBNAME, MYSQL_PORT);
-        //$dbh = new mysql('localhost', 'root', 'ppiao', 'ucdeploy', 3306);
     }
     return $dbh;
 }
@@ -189,16 +196,6 @@ function redirect($url)
         header('Location:'.$url, true, 301);
         exit;
     }
-}
-
-function str_replace_star($str,$star_len=3)
-{
-    $len = mb_strlen($str);
-    if($len>$star_len+2)
-    {
-        return mb_ereg_replace(mb_substr($str, ceil(($len-$star_len)/2), $star_len), str_pad('', $star_len,'*'),$str);
-    }
-    return $str;
 }
 
 /***********************************初始化控制器并执行该方法*******************************************************/
